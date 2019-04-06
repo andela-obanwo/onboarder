@@ -9,10 +9,10 @@ class DepartmentsTest(TestCase):
         super(DepartmentsTest, self).setUp()
         self.department_name = 'Human Resources'
 
-    def test_item_has_name_owner_and_type(self):
+    def test_department_has_name(self):
         item = Departments.objects.create(name=self.department_name)
         self.assertEqual(item.name, self.department_name)
 
-    def test_items_string_representation(self):
+    def test_departments_string_representation(self):
         item = Departments.objects.create(name=self.department_name)
         self.assertEqual(str(item), item.name)

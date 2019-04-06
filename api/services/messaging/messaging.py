@@ -1,8 +1,6 @@
 import requests
 from rest_framework import status
 
-from api.fixtures.users import User
-
 
 class Messaging(object):
     SEND_URL = NotImplemented

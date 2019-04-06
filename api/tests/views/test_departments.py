@@ -3,7 +3,7 @@ import json
 from django.test import TestCase, Client
 from django.urls import reverse
 
-from api.models import Departments, Departments
+from api.models import Departments
 
 
 class DepartmentsViewsetTest(TestCase):

@@ -1,9 +1,5 @@
-import json
-
-import requests
 import requests_mock
 from django.test import TestCase
-from rest_framework import status
 
 from api.fixtures.users import User
 from api.services.messaging.email import Email
